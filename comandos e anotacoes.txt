@@ -1,0 +1,30 @@
+INSTALAR O ANGULAR NO PROJETO
+
+# install the @angular/cli
+npm install -g @angular/cli
+
+# check cli version
+ng --version
+
+# create an app
+ng new first-ng-app # optionally use --dry-run //não vai criar praticamente nada
+
+# create an app with some configuration
+ng new first-ng-app --inline-style --inline-template //só cria os componentes base
+
+
+
+CRIAR componentes
+
+ng g c header # short form
+ng generate component header # full form
+# creates inside the `src/app` folder
+
+
+# OR (in a nested directory)
+ng g c components/header 
+# creates HeaderComponent 
+# inside the `src/app/components` folder
+
+ng g c home
+# creates the HomeComponent
